@@ -24,7 +24,16 @@ struct swift_crash_course {
         } else if highScore >= 50 {
             print("B rank")
         } else {
-            print("C rank")
+            print("try again")
+        }
+
+
+        for fav in favs {
+            print(fav)
+        }
+
+        for i in (1...5).reversed() {
+            print(i)
         }
     }
 }
