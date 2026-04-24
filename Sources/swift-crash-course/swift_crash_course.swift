@@ -113,7 +113,9 @@ struct swift_crash_course {
         }
 
         let toyota = Vehicle(brand: "Toyota", speed: 200)
+        let honda = Vehicle(brand: "Honda", speed: 250)
         toyota.describe()
+        honda.describe()
 
     }
 }
