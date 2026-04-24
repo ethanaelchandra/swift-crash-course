@@ -97,5 +97,23 @@ struct swift_crash_course {
         print("player \(player2.name) has score \(player2.score) and is \(player2.isStudent ? "" : "not ")a student, rank is \(player2.getRank())")
 
 
+        class Vehicle {
+        
+            var brand: String
+            var speed: Int
+
+            init(brand: String, speed: Int) {
+                self.brand = brand
+                self.speed = speed
+            }
+
+            func describe() {
+                print("\(brand) has a max speed of \(speed) km/h")
+            }
+        }
+
+        let toyota = Vehicle(brand: "Toyota", speed: 200)
+        toyota.describe()
+
     }
 }
