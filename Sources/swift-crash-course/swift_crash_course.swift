@@ -16,5 +16,15 @@ struct swift_crash_course {
 
         var scores = ["me": 100, "you": 5]
         print("your low score is \(scores["you"] ?? 0)")
+
+        if highScore >= 90 {
+            print("S rank")
+        } else if highScore >= 70 {
+            print("A rank")
+        } else if highScore >= 50 {
+            print("B rank")
+        } else {
+            print("C rank")
+        }
     }
 }
