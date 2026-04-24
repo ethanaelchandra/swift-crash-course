@@ -4,6 +4,17 @@
 @main
 struct swift_crash_course {
     static func main() {
-        print("Hello, world!")
+        let name = "Ethan"
+        var age = 20
+        var isStudent = true
+        var highScore: Int = 100
+        print("hi i'm \(name), \(age)yo, \(isStudent ? "yes" : "no") i'm \(isStudent ? "" : "not ")a student, my high score is \(highScore)")
+        
+
+        var favs = ["swift", "python", "javascript"]
+        print("my 2nd fav lang is \(favs[1])")
+
+        var scores = ["me": 100, "you": 5]
+        print("your low score is \(scores["you"])")
     }
 }
