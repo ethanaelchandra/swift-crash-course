@@ -15,6 +15,6 @@ struct swift_crash_course {
         print("my 2nd fav lang is \(favs[1])")
 
         var scores = ["me": 100, "you": 5]
-        print("your low score is \(scores["you"])")
+        print("your low score is \(scores["you"] ?? 0)")
     }
 }
