@@ -17,23 +17,63 @@ struct swift_crash_course {
         var scores = ["me": 100, "you": 5]
         print("your low score is \(scores["you"] ?? 0)")
 
-        if highScore >= 90 {
-            print("S rank")
-        } else if highScore >= 70 {
-            print("A rank")
-        } else if highScore >= 50 {
-            print("B rank")
+        // if highScore >= 90 {
+        //     print("S rank")
+        // } else if highScore >= 70 {
+        //     print("A rank")
+        // } else if highScore >= 50 {
+        //     print("B rank")
+        // } else {
+        //     print("try again")
+        // }
+
+        func getRank(score: Int) -> String {
+            if score >= 90 {
+                return "S rank"
+            } else if score >= 70 {
+                return "A rank"
+            } else if score >= 50 {
+                return "B rank"
+            } else {
+                return "try again"
+            }
+        }
+
+
+        func introduce(name realname: String, age realage: Int) {
+            print("hi i'm \(realname), i'm \(realage) yo")
+        }
+
+        print(getRank(score: highScore))
+        introduce(name: name, age: age)
+
+
+        // for fav in favs {
+        //     print(fav)
+        // }
+
+        // for i in (1...5).reversed() {
+        //     print(i)
+        // }
+
+
+
+
+        let middleName: String? = nil
+
+        if let middle = middleName {
+            print("middle name is \(middle)")
         } else {
-            print("try again")
+            print("no middle name")
         }
 
+        let actualMiddleName: String? = "Christian"
 
-        for fav in favs {
-            print(fav)
+        if let actualmid = actualMiddleName {
+            print("actual middle name is \(actualmid)")
+        } else {
+            print("no actual middle name")
         }
 
-        for i in (1...5).reversed() {
-            print(i)
-        }
     }
 }
