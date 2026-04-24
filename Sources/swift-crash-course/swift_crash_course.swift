@@ -75,5 +75,27 @@ struct swift_crash_course {
             print("no actual middle name")
         }
 
+
+
+
+
+
+        struct Player {
+            var name: String
+            var score: Int
+            var isStudent: Bool
+
+            func getRank() -> String {
+                if score >= 8999 {return "S rank"}
+                return "try again"
+            }
+        }
+
+        let player1 = Player(name: "ethan", score: 9000, isStudent: false)
+        let player2 = Player(name: "james", score: 8888, isStudent: true)
+        print("player \(player1.name) has score \(player1.score) and is \(player1.isStudent ? "" : "not ")a student, rank is \(player1.getRank())")
+        print("player \(player2.name) has score \(player2.score) and is \(player2.isStudent ? "" : "not ")a student, rank is \(player2.getRank())")
+
+
     }
 }
