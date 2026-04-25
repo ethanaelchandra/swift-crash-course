@@ -142,13 +142,13 @@ struct swift_crash_course {
             func habitat() -> String
         }
 
-        class Dog: Livable {
+        struct Dog: Livable {
             func habitat() -> String {
                 return "land"
             }
         }
 
-        class Fish: Livable {
+        struct Fish: Livable {
             func habitat() -> String {
                 return "water"
             }
@@ -157,5 +157,7 @@ struct swift_crash_course {
         let doghabitat = Dog().habitat()
         let fishhabitat = Fish().habitat()
         print("dog lives in \(doghabitat), fish lives in \(fishhabitat)")
+
+        
     }
 }
