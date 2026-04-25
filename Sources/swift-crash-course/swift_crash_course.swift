@@ -158,6 +158,30 @@ struct swift_crash_course {
         let fishhabitat = Fish().habitat()
         print("dog lives in \(doghabitat), fish lives in \(fishhabitat)")
 
+
+        enum Season {
+            case spring, summer, autumn, winter
+        }
+
+        let currentSeason = Season.summer
+        
+        
+        func describe(season: Season) -> String {
+            switch season {
+            case .spring:
+                return "spring is blooming"
+            case .summer:
+                return "summer is hot"
+            case .autumn:
+                return "autumn is colorful"
+            case .winter:
+                return "winter is cold"
+            }
+        }
+
+        print(describe(season: currentSeason))
+        print(describe(season: .spring))
+        print(describe(season: .autumn))
         
     }
 }
