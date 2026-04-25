@@ -57,7 +57,7 @@ struct swift_crash_course {
         // }
 
 
-
+        // optionals
 
         let middleName: String? = nil
 
@@ -182,6 +182,8 @@ struct swift_crash_course {
         print(describe(season: currentSeason))
         print(describe(season: .spring))
         print(describe(season: .autumn))
+
+        
         
     }
 }
