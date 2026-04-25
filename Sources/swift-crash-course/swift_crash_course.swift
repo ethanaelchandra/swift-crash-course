@@ -135,5 +135,27 @@ struct swift_crash_course {
         let porsche = Car(brand: "Porsche", speed: 300, doors: 2)
         porsche.describe()
 
+
+
+
+        protocol Livable {
+            func habitat() -> String
+        }
+
+        class Dog: Livable {
+            func habitat() -> String {
+                return "land"
+            }
+        }
+
+        class Fish: Livable {
+            func habitat() -> String {
+                return "water"
+            }
+        }
+        
+        let doghabitat = Dog().habitat()
+        let fishhabitat = Fish().habitat()
+        print("dog lives in \(doghabitat), fish lives in \(fishhabitat)")
     }
 }
