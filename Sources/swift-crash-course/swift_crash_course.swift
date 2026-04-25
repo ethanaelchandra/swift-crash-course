@@ -117,5 +117,18 @@ struct swift_crash_course {
         toyota.describe()
         honda.describe()
 
+
+
+        class Car: Vehicle {
+            var doors: Int 
+
+            override func describe() {
+                print("\(brand) has a max speed of \(speed) km/h and has \(doors) doors")
+            }
+        }
+
+        let porsche = Car(brand: "Porsche", speed: 300, doors: 2)
+        porsche.describe()
+
     }
 }
