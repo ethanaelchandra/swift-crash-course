@@ -122,6 +122,11 @@ struct swift_crash_course {
         class Car: Vehicle {
             var doors: Int 
 
+            init(brand: String, speed: Int, doors: Int) {
+                self.doors = doors
+                super.init(brand: brand, speed: speed)
+            }
+
             override func describe() {
                 print("\(brand) has a max speed of \(speed) km/h and has \(doors) doors")
             }
