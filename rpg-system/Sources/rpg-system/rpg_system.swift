@@ -4,6 +4,20 @@
 @main
 struct rpg_system {
     static func main() {
-        print("Hello, world!")
+        enum characterClass {
+            case warrior
+            case mage
+            case archer
+        }
+
+        struct item {
+
+        }
+
+        protocol Describable {
+            func describe() -> String
+        }
+
+        
     }
 }
